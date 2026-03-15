@@ -798,7 +798,7 @@ cp -r skills/* ~/.claude/skills/
 claude
 ```
 
-> **⚠️ 非 Claude 执行者（GLM、Kimi 等）：** 需要让模型先读一遍项目，确保 skill 能正确解析：
+> **⚠️ 非 Claude 执行者（GLM、Kimi 等）：** 需要让模型先读一遍项目，确保 skill 能正确解析。尤其是当你已经[改写了 skill](#-替代模型组合) 以使用不同的审查器 MCP（如 `mcp__llm-chat__chat` 替代 `mcp__codex__codex`）时——新执行器需要理解变更后的工具调用方式：
 >
 > ```
 > 读一下这个项目，验证所有 skills 是否正常：
