@@ -80,7 +80,7 @@ claude
 
 ## ✨ 功能亮点
 
-- 📊 **27 个可组合 skill** — 自由混搭，或串联为完整流水线（`/idea-discovery`、`/research-refine-pipeline`、`/auto-review-loop`、`/paper-writing`、`/research-pipeline`）
+- 📊 **20 个可组合 skill** — 自由混搭，或串联为完整流水线（`/idea-discovery`、`/auto-review-loop`、`/paper-writing`、`/research-pipeline`）
 - 🔍 **文献 & 查新** — 多源论文搜索（**[Zotero](#-zotero-集成可选)** + **[Obsidian](#-obsidian-集成可选)** + **本地 PDF** + arXiv/Scholar）+ 跨模型查新验证
 - 💡 **Idea 发现** — 文献调研 → 头脑风暴 8-12 个 idea → 查新 → GPU pilot 实验 → 排名报告
 - 🔄 **自动 review 循环** — 4 轮自主审稿，一夜从 5/10 提升到 7.5/10，自动跑 20+ 组 GPU 实验
@@ -140,13 +140,11 @@ claude
 | Skill | 📐 [`proof-writer`](skills/proof-writer/SKILL.md) | ML 理论 | 严格的定理/引理证明撰写——可行性分类、依赖图谱、诚实的阻塞报告。搭配工作流 3（`/paper-writing`）写理论章节，或工作流 2（`/auto-review-loop`）修补 reviewer 指出的证明漏洞 | 否 |
 | Docs | 🐾 [OpenClaw 适配指南](docs/OPENCLAW_ADAPTATION.md) | 通用 | 在 [OpenClaw](https://github.com/All-Hands-AI/OpenHands) 中使用 ARIS 工作流方法论——skill 到阶段映射、文件化编排，无需 Claude Code CLI | 否 |
 
-> **⭐ 推荐：[`research-refine`](skills/research-refine/SKILL.md) + [`experiment-plan`](skills/experiment-plan/SKILL.md)** — 填补了“研究什么”到“怎么研究”之间的空白。接入 ARIS 流水线：
+> **⭐ 推荐：[`research-refine`](skills/research-refine/SKILL.md)** — 填补了“研究什么”到“怎么研究”之间的空白。接入 ARIS 流水线：
 >
-> `/idea-discovery` → **`/research-refine`** → **`/experiment-plan`** → `/auto-review-loop` → `/paper-writing`
+> `/idea-discovery` → **`/research-refine`** → `/auto-review-loop` → `/paper-writing`
 >
-> 模糊想法 → 排名后的 idea → **可执行研究方案** → **实验路线图** → 精修论文
->
-> 如果想把中间两步一键串起来，可直接用 [`/research-refine-pipeline`](skills/research-refine-pipeline/SKILL.md)。
+> 模糊想法 → 排名后的 idea → **可执行研究方案** → 精修论文
 
 ## 🔄 工作流
 

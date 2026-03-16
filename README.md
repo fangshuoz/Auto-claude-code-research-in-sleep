@@ -80,7 +80,7 @@ See [full setup guide](#%EF%B8%8F-setup) for details and [alternative model comb
 
 ## ✨ Features
 
-- 📊 **27 composable skills** — mix and match, or chain into full pipelines (`/idea-discovery`, `/research-refine-pipeline`, `/auto-review-loop`, `/paper-writing`, `/research-pipeline`)
+- 📊 **20 composable skills** — mix and match, or chain into full pipelines (`/idea-discovery`, `/auto-review-loop`, `/paper-writing`, `/research-pipeline`)
 - 🔍 **Literature & novelty** — multi-source paper search (**[Zotero](#-zotero-integration-optional)** + **[Obsidian](#-obsidian-integration-optional)** + **local PDFs** + arXiv/Scholar) + cross-model novelty verification
 - 💡 **Idea discovery** — literature survey → brainstorm 8-12 ideas → novelty check → GPU pilot experiments → ranked report
 - 🔄 **Auto review loop** — 4-round autonomous review, 5/10 → 7.5/10 overnight with 20+ GPU experiments
@@ -140,13 +140,11 @@ Domain-specific skills and external projects contributed by the community. PRs w
 | Skill | 📐 [`proof-writer`](skills/proof-writer/SKILL.md) | ML Theory | Rigorous theorem/lemma proof drafting — feasibility triage, dependency maps, honest blockage reports. Pairs with Workflow 3 (`/paper-writing`) for theory sections, or Workflow 2 (`/auto-review-loop`) when reviewers flag proof gaps | No |
 | Docs | 🐾 [OpenClaw Adaptation Guide](docs/OPENCLAW_ADAPTATION.md) | General | Use ARIS workflow methodology in [OpenClaw](https://github.com/All-Hands-AI/OpenHands) — skill-to-stage mapping, file-based orchestration, no Claude Code CLI needed | No |
 
-> **⭐ Highlighted: [`research-refine`](skills/research-refine/SKILL.md) + [`experiment-plan`](skills/experiment-plan/SKILL.md)** — Fill the gap between "what to research" and "how to research it". Plug them into the ARIS pipeline:
+> **⭐ Highlighted: [`research-refine`](skills/research-refine/SKILL.md)** — Fills the gap between "what to research" and "how to research it". Plug it into the ARIS pipeline:
 >
-> `/idea-discovery` → **`/research-refine`** → **`/experiment-plan`** → `/auto-review-loop` → `/paper-writing`
+> `/idea-discovery` → **`/research-refine`** → `/auto-review-loop` → `/paper-writing`
 >
-> Vague idea → Ranked ideas → **Executable proposal** → **Experiment roadmap** → Polished paper
->
-> Prefer a one-shot middle stage? Use [`/research-refine-pipeline`](skills/research-refine-pipeline/SKILL.md).
+> Vague idea → Ranked ideas → **Executable proposal** → Polished paper
 
 ## 🔄 Workflows
 
