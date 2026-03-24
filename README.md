@@ -51,7 +51,7 @@ ARIS reads the paper → finds its weaknesses → clones the codebase → genera
 /paper-poster "paper/"     # → A0/A1 poster PDF + editable PPTX + SVG
 ```
 
-**📝 Rebuttal mode** — reviews are in? ARIS drafts a safe, grounded rebuttal:
+**🔥 Rebuttal mode** — reviews just dropped? Don't panic. ARIS reads every concern, builds a strategy, and drafts a rebuttal that's grounded, structured, and under the character limit:
 
 ```
 /rebuttal "paper/ + reviews" — venue: ICML, character limit: 5000
